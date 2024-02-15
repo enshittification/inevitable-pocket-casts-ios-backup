@@ -181,5 +181,6 @@ private extension SyncTask {
         podcast.settings.$trimSilence = settings.$trimSilence
         podcast.settings.$playbackSpeed = settings.$playbackSpeed
         podcast.settings.$boostVolume = settings.$boostVolume
+        podcast.settings.$notification = settings.$notification
     }
 }

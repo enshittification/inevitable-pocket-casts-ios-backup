@@ -11,6 +11,7 @@ extension DataManager {
             podcast.settings.$playbackSpeed = ModifiedDate<Double>(wrappedValue: podcast.playbackSpeed)
             podcast.settings.$trimSilence = ModifiedDate<TrimSilenceAmount>(wrappedValue: TrimSilenceAmount(rawValue: podcast.trimSilenceAmount)!)
             podcast.settings.$boostVolume = ModifiedDate<Bool>(wrappedValue: podcast.boostVolume)
+            podcast.settings.$notification = ModifiedDate<Bool>(wrappedValue: podcast.pushEnabled)
 
             save(podcast: podcast)
         }

@@ -49,4 +49,14 @@ extension Podcast {
             skipLast = newValue
         }
     }
+
+    var isPushEnabled: Bool {
+        get {
+            if FeatureFlag.settingsSync.enabled {
+                return settings.notification
+            } else {
+                return pushEnabled
+            }
+        }
+    }
 }
